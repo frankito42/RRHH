@@ -1,6 +1,6 @@
 <?php
 require "../conn/conn.php";
-$arrayHDC=$_POST['hdc'];
+$arrayHDC=$_POST['hdc']; 
 $hdc="hdc";
 $motivos=json_decode($_POST['motivos']);
 
