@@ -161,31 +161,31 @@ document.querySelector(".autocomplete").addEventListener("click", (e) => {
 /* ////////////////////AQUI GUARDAMOS LOS EMPLEADOS EN LOCALSTORAGE//////////////////// */
 /* ////////////////////AQUI GUARDAMOS LOS EMPLEADOS EN LOCALSTORAGE//////////////////// */
 document.querySelector(".autocomplete").addEventListener("change", (e) => {
-  /* console.log(e.target.parentElement) */
-  /* console.log(empleados) */
-  let empleado = empleados.find(
-    (nombre) => nombre.nombreApellido === e.target.value
-  );
-  console.log(empleado);
-  document.getElementById(
-    "empleSeleccion"
-  ).innerHTML += `<p>${empleado.nombreApellido}</p>`;
-  e.target.value = "";
-  let ulti = localStorage.getItem(`ultimoEntro`);
-  /* console.log(ulti) */
+  /* BUSCO EL EMPLEADO EN UN ARRAY */
+  let empleado = empleados.find((nombre) => nombre.nombreApellido === e.target.value);
   let arrayEmple = [];
+  let ulti = localStorage.getItem(`ultimoEntro`);
+  /* console.log(empleado); */
+
+  document.getElementById("empleSeleccion").innerHTML += `<p>${empleado.nombreApellido} <button style="" class="btn waves-effect waves-light red lighten-3" onclick="borrarDeStorage(${empleado.idEmpleado},event)">x</button></p>`;
+  e.target.value = "";
+
+
+  
+  /* console.log(ulti) */
+  
   arrayEmple.push(empleado);
   let allEmpleadosForm = JSON.parse(localStorage.getItem(`${ulti}`));
   /* console.log(allEmpleadosForm) */
   if (Array.isArray(allEmpleadosForm)) {
     if (allEmpleadosForm.length >= 0) {
       allEmpleadosForm.push(empleado);
-      let todos = ``;
+      /* let todos = ``;
       allEmpleadosForm.forEach((element) => {
         console.log(element);
         todos += `<p>${element.nombreApellido} <button style="" class="btn waves-effect waves-light red lighten-3" onclick="borrarDeStorage(${element.idEmpleado},event)">x</button></p>`;
       });
-      document.getElementById("empleSeleccion").innerHTML = todos;
+      document.getElementById("empleSeleccion").innerHTML = todos; */
       /* console.log(allEmpleadosForm) */
       localStorage.setItem(`${ulti}`, JSON.stringify(allEmpleadosForm));
     }
@@ -382,152 +382,152 @@ async function dibujarHCD(params) {
               <tr>
                 <th scope="row">E</th>
                 <td>Efectivos</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.efectivos}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.efectivos} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">P</th>
                 <td>Presentes</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.presentes}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.presentes} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">A</th>
                 <td>Ausentes</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.ausentes}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.ausentes} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
-                <th scope="row">A</th>
+                <th scope="row">AIN</th>
                 <td>Ausente injustificado</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.a}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.a} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">LA</th>
                 <td>Licencia anual</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.la}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.la} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">AT</th>
                 <td>Accidente de trabajo</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.at}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.at} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">MATR</th>
                 <td>Matrimonio agente</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.matr}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.matr} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">EST</th>
                 <td>Estudio</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.est}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.est} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">NAC</th>
                 <td>Nacimiento hijo</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.nac}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.nac} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">LEA</th>
                 <td>Enfermedad agente</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.lea}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.lea} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">LEF</th>
                 <td>Atencion familiar</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.lef}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.lef} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">EXAM</th>
                 <td>Examenes</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.exam}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.exam} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">LACT</th>
                 <td>Lactancia o alimentacion</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.lact}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.lact} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">LF</th>
                 <td>Fallecimiento</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.lf}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.lf} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">HC</th>
                 <td>Historia clinica</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.hc}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.hc} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">MATERN</th>
                 <td>Maternidad</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.matern}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.matern} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">RP</th>
                 <td>Razones particulares</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.rp}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.rp} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">DONS</th>
                 <td>Donaciones de sangre</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.dons}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.dons} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">JT</th>
                 <td>Jubilacion transitoria</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.jt}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.jt} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">LI</th>
                 <td>Licencia invernal</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.li}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.li} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">MO</th>
                 <td>Mision oficial</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.mo}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.mo} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">SUSP</th>
                 <td>Suspension</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.susp}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.susp} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">LEE6M</th>
                 <td>Lic. Esp. Extr./6meses sin goce de haberes</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.lee6m}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.lee6m} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">LEE1A</th>
                 <td>Lic. Esp. Extr./1año</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.lee1a}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.lee1a} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
-                <th scope="row">D.538</th>
+                <th scope="row">D538</th>
                 <td>Autorizado decreto 538/20</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.d538}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.d538} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
-                <th scope="row">CV+</th>
+                <th scope="row">CVPOSI</th>
                 <td>Covid positivo</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.cvp}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.cvp} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
-                <th scope="row">AISL/C.E</th>
+                <th scope="row">AISLCE</th>
                 <td>Aislado contacto estrecho</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.aislce}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.aislce} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
-                <th scope="row">POST COVID+</th>
+                <th scope="row">POSTCOVID</th>
                 <td>Post covid positivo</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.postCovidpos}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.postCovidpos} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
-                <th scope="row">FALLECIMIENTO COVID</th>
+                <th scope="row">FALLECIMIENTOCOVID</th>
                 <td>Fallecimiento covid</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.fallecimientoCovid}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.fallecimientoCovid} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
               <tr>
                 <th scope="row">TICE</th>
                 <td>Total inactivos covid ejecutivo</td>
-                <td class="text-center" style="width: ;padding: 0px !important;">${params.ticp}</td>
+                <td class="text-center" style="width: ;padding: 0px !important;">${params.ticp} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
             </tbody>
           </table>
@@ -588,7 +588,41 @@ document.getElementById("formulario1").addEventListener("submit", (e) => {
   e.preventDefault();
  
   let formData = new FormData(document.getElementById("formulario1"));
-    formData.append("a","a")
+  let motivos={
+  E:JSON.parse(localStorage.getItem("E")),
+  P:JSON.parse(localStorage.getItem("P")),
+  A:JSON.parse(localStorage.getItem("A")),
+  AIN:JSON.parse(localStorage.getItem("A IN")),
+  LA:JSON.parse(localStorage.getItem("LA")),
+  AT:JSON.parse(localStorage.getItem("AT")),
+  MATR:JSON.parse(localStorage.getItem("MATR")),
+  EST:JSON.parse(localStorage.getItem("EST")),
+  NAC:JSON.parse(localStorage.getItem("NAC")),
+  LEA:JSON.parse(localStorage.getItem("LEA")),
+  LEF:JSON.parse(localStorage.getItem("LEF")),
+  EXAM:JSON.parse(localStorage.getItem("EXAM")),
+  LACT:JSON.parse(localStorage.getItem("LACT")),
+  LF:JSON.parse(localStorage.getItem("LF")),
+  HC:JSON.parse(localStorage.getItem("HC")),
+  MATERN:JSON.parse(localStorage.getItem("MATERN")),
+  RP:JSON.parse(localStorage.getItem("RP")),
+  DONS:JSON.parse(localStorage.getItem("DONS")),	
+  JT:JSON.parse(localStorage.getItem("JT")),
+  LI:JSON.parse(localStorage.getItem("LI")),
+  MO:JSON.parse(localStorage.getItem("MO")),
+  SUSP:JSON.parse(localStorage.getItem("SUSP")),
+  LEE6M:JSON.parse(localStorage.getItem("LEE6M")),
+  LEE1A:JSON.parse(localStorage.getItem("LEE1A")),
+  D538:JSON.parse(localStorage.getItem("D.538")),
+  CVPOSI:JSON.parse(localStorage.getItem("CV+")),
+  AISLCE:JSON.parse(localStorage.getItem("AISL/C.E")),
+  POSTCOVID:JSON.parse(localStorage.getItem("POST COVID+")),
+  FALLECIMIENTOCOVID:JSON.parse(localStorage.getItem("FALLECIMIENTO COVID")),
+  TICE:JSON.parse(localStorage.getItem("TICE"))
+  }
+
+  console.log(motivos)
+  formData.append("motivos",JSON.stringify(motivos))
   
   fetch("php/addHCD.php", {
     method: "POST",
@@ -597,5 +631,34 @@ document.getElementById("formulario1").addEventListener("submit", (e) => {
     .then((response) => response.json())
     .then((data) => {
       console.log("Success:", data);
+      localStorage.clear();
+      document.getElementById("formulario1").reset()
+      /* document.getElementById("mostrarEmpleados").close(); */
+      /* $('#mostrarEmpleados').modal('close'); */
+      /* $('#mostrarEmpleados').closeModal(); */
+      $('.modal').modal('close');
     });
 });
+
+function mostrarEmpleMotivo(e,idA) {
+  let tituloModal=e.parentElement.parentElement.firstChild.nextSibling.nextSibling.nextSibling.innerHTML
+  let motivo=e.parentElement.parentElement.firstChild.nextSibling.innerHTML
+  console.log(e.parentElement.parentElement.firstChild.nextSibling)
+
+  document.getElementById("titulo").innerHTML=tituloModal
+
+  fetch('php/traerMotivo.php?id='+idA+'&motivo='+motivo)
+  .then(response => response.json())
+  .then((data)=> {
+    console.log(data)
+    let motivoEmple=``
+    data.forEach(element => {
+      motivoEmple+=`<p>${element.nombreApellido}</p>`
+    });
+    if (data=="") {
+      document.getElementById("empleaFaltan").innerHTML="Nadie."
+    }else{
+      document.getElementById("empleaFaltan").innerHTML=motivoEmple
+    }
+  });
+}
