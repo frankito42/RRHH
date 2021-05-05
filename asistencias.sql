@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-05-2021 a las 14:33:47
--- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.3.2
+-- Tiempo de generación: 05-05-2021 a las 02:38:12
+-- Versión del servidor: 10.4.11-MariaDB
+-- Versión de PHP: 7.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -30,39 +29,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `asisemple` (
   `idAsis` int(11) NOT NULL,
-  `efectivos` int(11) NOT NULL,
-  `presentes` int(11) NOT NULL,
-  `ausentes` int(11) NOT NULL,
-  `a` int(11) NOT NULL COMMENT 'ausente injustificado',
-  `la` int(11) NOT NULL COMMENT 'licencia anual',
-  `at` int(11) NOT NULL COMMENT 'accidente de trabajo',
-  `matr` int(11) NOT NULL COMMENT 'matrimonio agente',
-  `est` int(11) NOT NULL COMMENT 'estudio',
-  `nac` int(11) NOT NULL COMMENT 'nacimiento hijo',
-  `lea` int(11) NOT NULL COMMENT 'enfermedad agente',
-  `lef` int(11) NOT NULL COMMENT 'atencion familiar',
-  `exam` int(11) NOT NULL COMMENT 'examenes',
-  `lact` int(11) NOT NULL COMMENT 'lactancia o alimentacion',
-  `lf` int(11) NOT NULL COMMENT 'fallecimiento',
-  `hc` int(11) NOT NULL COMMENT 'historia clinica',
-  `matern` int(11) NOT NULL COMMENT 'maternidad',
-  `rp` int(11) NOT NULL COMMENT 'razones particulares',
-  `dons` int(11) NOT NULL COMMENT 'donaciones de sangre',
-  `jt` int(11) NOT NULL COMMENT 'jubilacion transitoria',
-  `li` int(11) NOT NULL COMMENT 'licencia invernal',
-  `mo` int(11) NOT NULL COMMENT 'mosion oficial',
-  `susp` int(11) NOT NULL COMMENT 'suspension',
-  `lee6m` int(11) NOT NULL COMMENT 'lic. esp. extr./6 meses sin goce de haberes',
-  `lee1a` int(11) NOT NULL COMMENT 'lic. esp. extr./1año',
-  `adsc` int(11) NOT NULL COMMENT 'municipales adscriptos',
-  `lp` int(11) NOT NULL COMMENT 'licencia politica',
-  `d538` int(11) NOT NULL COMMENT 'autorizado decreto 538/20',
-  `cvp` int(11) NOT NULL COMMENT 'covid positivo',
-  `aislce` int(11) NOT NULL COMMENT 'aislado contacto estrecho',
-  `ticp` int(11) NOT NULL COMMENT 'total inactivos covid positivo',
-  `postCovidpos` int(11) NOT NULL,
-  `fallecimientoCovid` int(11) NOT NULL
+  `motivo` varchar(20) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `idEmple` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `asisemple`
+--
+
+INSERT INTO `asisemple` (`idAsis`, `motivo`, `idEmple`) VALUES
+(1, 'E', 1),
+(1, 'P', 1),
+(1, 'A', 3),
+(1, 'AIN', 1);
 
 -- --------------------------------------------------------
 
@@ -113,13 +92,7 @@ CREATE TABLE `asistencias` (
 --
 
 INSERT INTO `asistencias` (`id`, `efectivos`, `presentes`, `ausentes`, `a`, `la`, `at`, `matr`, `est`, `nac`, `lea`, `lef`, `exam`, `lact`, `lf`, `hc`, `matern`, `rp`, `dons`, `jt`, `li`, `mo`, `susp`, `lee6m`, `lee1a`, `adsc`, `lp`, `d538`, `cvp`, `aislce`, `ticp`, `fecha`, `tipo`, `postCovidpos`, `fallecimientoCovid`) VALUES
-(6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2021-04-27', 'muni', 0, 0),
-(7, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, '2021-04-27', 'hdc', 0, 0),
-(8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, '2021-04-28', 'muni', 0, 0),
-(9, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 5, 5, 5, 5, '2021-04-28', 'hdc', 0, 0),
-(11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 32, '2021-04-01', 'muni', 30, 31),
-(12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 32, '2021-04-29', 'muni', 30, 31),
-(13, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 0, 0, 26, 27, 28, 31, '2021-04-29', 'hdc', 29, 30);
+(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, '2021-05-02', 'hdc', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -194,7 +167,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `asistencias`
 --
 ALTER TABLE `asistencias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `empleados`
