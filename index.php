@@ -16,7 +16,7 @@ if(!isset($_SESSION['user'])){
     <link rel="stylesheet" href="mdb/css/all.min.css">
     <link rel="stylesheet" href="js/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+ 
 
     <title>Inicio</title>
 </head>
