@@ -7,7 +7,7 @@ if(!isset($_SESSION['user'])){
 ?> 
 <!DOCTYPE html>
 <html lang="es"> 
-<head>  
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,7 +91,7 @@ if(!isset($_SESSION['user'])){
                 <tr>
                   <th scope="row">E</th>
                <!--    <td>Efectivos</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" id="efectivosMuni" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
                   </td>
@@ -294,7 +294,7 @@ if(!isset($_SESSION['user'])){
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
-                  </td> 
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">D.538</th>
@@ -381,7 +381,7 @@ if(!isset($_SESSION['user'])){
                 <tr>
                   <th scope="row">E</th>
                   <!-- <td>Efectivos</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" id="efectivosHcd" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
                   </td>
@@ -696,6 +696,6 @@ if(!isset($_SESSION['user'])){
 <!-- <script src="mdb/js/bootstrap.min.js"></script>
 <script src="mdb/js/mdb.min.js"></script> -->
 <script src="mdb/js/all.min.js"></script>
-<script src="js/js.js"></script>
 <script src="js/materialize.min.js"></script>
+<script src="js/js.js"></script>
 </html>
