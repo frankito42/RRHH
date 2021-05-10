@@ -294,7 +294,7 @@ if(!isset($_SESSION['user'])){
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
-                  </td>
+                  </td> 
                 </tr>
                 <tr>
                   <th scope="row">D.538</th>
