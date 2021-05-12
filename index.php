@@ -248,7 +248,7 @@ if(!isset($_SESSION['user'])){
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
                   </td>
                 </tr>
-                <tr>
+                <tr> 
                   <th scope="row">MO</th>
                   <!-- <td>Mision oficial</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
