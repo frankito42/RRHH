@@ -89,7 +89,7 @@ if(!isset($_SESSION['user'])){
                   <td style="width: ;padding: 0px !important;" colspan="2"><input required name="muni[]" placeholder="Seleccione la fecha" id="fechaM" class="form-control datepicker" type="text"></td>
                 </tr>
                 <tr>
-                  <th scope="row">E</th>
+                  <th scope="row">EM</th>
                <!--    <td>Efectivos</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" id="efectivosMuni" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
@@ -379,7 +379,7 @@ if(!isset($_SESSION['user'])){
                 </tr>
                 <tr>
                 <tr>
-                  <th scope="row">E</th>
+                  <th scope="row">EH</th>
                   <!-- <td>Efectivos</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" id="efectivosHcd" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">

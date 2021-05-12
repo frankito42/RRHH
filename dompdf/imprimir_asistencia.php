@@ -20,6 +20,7 @@ use Dompdf\Dompdf;
           <label>Municipalidad de Clorinda Provincia de Formosa </label>
           <br>
           <label>ADMINISTRACION CELAURO <B>"GENTE DE TRABAJO"</B></label>
+          <h1>Estados de asistencia:</h1>
         </div>
 </div>
      <section>
@@ -28,8 +29,10 @@ use Dompdf\Dompdf;
          <br>
          <br>
          
-<h1 style="margin-left: 26%;" >Estados de asistencia:</h1>
-
+ <br> 
+  <br>
+  <br>
+   <br>
 <table cellspacing="0" width="100%" border="1">
               <tbody>
               <tr>
@@ -212,6 +215,7 @@ use Dompdf\Dompdf;
  }
 .columna-derecha{
     float:left;
+    margin-top:-18%;
     width:340px;
     }
     
@@ -219,7 +223,7 @@ use Dompdf\Dompdf;
     text-align:left;
     margin-right:5px;
     padding-right:4px;
-    
+    margin-top:140px;
     float:left;
     width:140px;
     }

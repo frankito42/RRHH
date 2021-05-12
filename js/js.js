@@ -57,9 +57,8 @@ document.addEventListener("DOMContentLoaded", async function () {
   });
   await traerUno();
   await traerUnHCD();
-  await traerEmpleados().then(async () => {
-    await dibujarOptionsSelect();
-  });
+  await traerEmpleados()
+  await dibujarOptionsSelect();
   await contarEmpleados();
   /* await contarEmpleados(); */
 
@@ -69,8 +68,23 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 async function contarEmpleados() {
   console.log(empleados);
-  let totalEmpleMuni = empleados.length;
-  let totalEmpleHcd = empleados.length;
+  let totalEmpleMuni =0;
+  let totalEmpleHcd =0;
+  let empleMuni=[]
+  let empleHcd=[]
+  empleados.forEach((element) => {
+    if(element.forKeyTipo==1){
+      totalEmpleMuni+=1
+      empleMuni.push(element)
+    }else{
+      totalEmpleHcd+=1
+      empleHcd.push(element);
+    }
+    localStorage.setItem("EM",JSON.stringify(empleMuni))
+    localStorage.setItem("EH",JSON.stringify(empleHcd))
+
+  });
+  
   document.getElementById("efectivosMuni").value = totalEmpleMuni;
   document.getElementById("efectivosHcd").value = totalEmpleHcd;
 }
@@ -612,7 +626,7 @@ document.getElementById("formulario1").addEventListener("submit", (e) => {
 
   let formData = new FormData(document.getElementById("formulario1"));
   let motivos = {
-    E: JSON.parse(localStorage.getItem("E")),
+    E: JSON.parse(localStorage.getItem("EH")),
     P: JSON.parse(localStorage.getItem("P")),
     A: JSON.parse(localStorage.getItem("A")),
     AIN: JSON.parse(localStorage.getItem("A IN")),
@@ -652,7 +666,7 @@ document.getElementById("formulario1").addEventListener("submit", (e) => {
     body: formData,
   })
     .then((response) => response.json())
-    .then((data) => {
+    .then(async (data) => {
       console.log("Success:", data);
 
       traerUnHCD(document.getElementById("fechaH").value);
@@ -660,6 +674,7 @@ document.getElementById("formulario1").addEventListener("submit", (e) => {
       localStorage.clear();
 
       document.getElementById("formulario1").reset();
+      await contarEmpleados();
       /* document.getElementById("mostrarEmpleados").close(); */
       /* $('#mostrarEmpleados').modal('close'); */
       /* $('#mostrarEmpleados').closeModal(); */
@@ -781,7 +796,7 @@ document.getElementById("formulario2").addEventListener("submit", (e) => {
 
   let formData = new FormData(document.getElementById("formulario2"));
   let motivos = {
-    E: JSON.parse(localStorage.getItem("E")),
+    E: JSON.parse(localStorage.getItem("EM")),
     P: JSON.parse(localStorage.getItem("P")),
     A: JSON.parse(localStorage.getItem("A")),
     AIN: JSON.parse(localStorage.getItem("A IN")),
@@ -823,12 +838,12 @@ document.getElementById("formulario2").addEventListener("submit", (e) => {
     body: formData,
   })
     .then((response) => response.json())
-    .then((data) => {
+    .then(async (data) => {
       console.log("Success:", data);
       traerUno(document.getElementById("fechaM").value);
 
       localStorage.clear();
-
+      await contarEmpleados();
       document.getElementById("formulario2").reset();
       /* document.getElementById("mostrarEmpleados").close(); */
       /* $('#mostrarEmpleados').modal('close'); */
