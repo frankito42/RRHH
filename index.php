@@ -24,24 +24,35 @@ if(!isset($_SESSION['user'])){
     <section>
       
 
-        <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">Uno</a></li>
-  <li><a href="#!">Dos</a></li>
-  <li class="divider"></li>
-  <li><a href="Login/php/logout.php">Cerrar sesion</a></li>
-</ul>
-<nav style="background:#2196f3;">
-  <div class="nav-wrapper"> 
-    <a href="#!" class="brand-logo"><i class="material-icons dp48">people</i>Asistencias</a>
-    <ul class="right hide-on-med-and-down">
-     <!--  <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li> -->
-      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">person</i><?php echo $_SESSION['user']['user']?><i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-  </div>
-</nav>
+
+  <nav class="light-blue darken-1">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Asistencias</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Saa</a></li>
+        <li><a href="#">Componentes</a></li>
+        <li><a href="#">Empleados</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">person</i><?php echo $_SESSION['user']['user']?><i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">Uno</a></li>
+    <li><a href="#!">Dos</a></li>
+    <li class="divider"></li>
+    <li><a href="Login/php/logout.php">Cerrar sesion</a></li>
+  </ul>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Saa</a></li>
+    <li><a href="#">Componentes</a></li>
+    <li><a href="#">Empleados</a></li>
+    <li><a href="Login/php/logout.php">Cerrar sesion</a></li>
+  </ul>
+
+
     </section>
     <section>
       <div class="container">
@@ -50,8 +61,8 @@ if(!isset($_SESSION['user'])){
 
 
                 <div class="input-field col">
-                  <a style="background:#1e88e5;" class="waves-effect waves-light btn modal-trigger btn-large" href="#modal2">Municipales</a>
-                  <a style="background:#f45da9;" class="waves-effect waves-light btn modal-trigger btn-large" href="#modal1">Agentes HCD</a>
+                  <a style="background:#1e88e5;" class="waves-effect waves-light btn modal-trigger btn-smal" href="#modal2">Municipales</a>
+                  <a style="background:#f45da9;" class="waves-effect waves-light btn modal-trigger btn-smal" href="#modal1">Agentes HCD</a>
                   
                 </div>
                 <div class="input-field col s12">
@@ -93,7 +104,7 @@ if(!isset($_SESSION['user'])){
                <!--    <td>Efectivos</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" id="efectivosMuni" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -101,7 +112,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Presentes</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -109,7 +120,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Ausentes</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -117,7 +128,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Ausente injustificado</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -125,7 +136,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Licencia anual</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -133,7 +144,7 @@ if(!isset($_SESSION['user'])){
                <!--    <td>Accidente de trabajo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -141,7 +152,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Matrimonio agente</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -149,7 +160,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Estudio</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -157,7 +168,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Nacimiento hijo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -165,7 +176,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Enfermedad agente</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -173,7 +184,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Atencion familiar</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -181,7 +192,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Examenes</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -189,7 +200,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Lactancia o alimentacion</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -197,7 +208,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Fallecimiento</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -205,7 +216,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Historia clinica</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -213,7 +224,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Maternidad</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -221,7 +232,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Razones particulares</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -229,7 +240,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Donaciones de sangre</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -237,7 +248,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Jubilacion transitoria</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -245,7 +256,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Licencia invernal</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr> 
@@ -253,7 +264,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Mision oficial</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -261,7 +272,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Suspension</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -269,7 +280,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Lic. Esp. Extr./6meses sin goce de haberes</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -277,7 +288,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Lic. Esp. Extr./1año</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -285,7 +296,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Municipales adscriptos</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -293,7 +304,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Licencia politica</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -301,7 +312,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Autorizado decreto 538/20</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -309,7 +320,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Covid positivo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -317,7 +328,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Aislado contacto estrecho</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -325,15 +336,15 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Post covid positivo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">FALLECIMIENTO COVID</th>
+                  <th scope="row">FALLE CIMIENTO COVID</th>
                   <!-- <td>Fallecimiento covid</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
@@ -341,7 +352,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Total inactivos covid ejecutivo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger" href="#modalEmpleadosMunicipales">Add municipal</a>
+                      <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
               </tbody>
@@ -383,7 +394,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Efectivos</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" id="efectivosHcd" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -391,7 +402,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Presentes</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -399,7 +410,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Ausentes</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -407,7 +418,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Ausente injustificado</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -415,7 +426,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Licencia anual</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -423,7 +434,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Accidente de trabajo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -431,7 +442,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Matrimonio agente</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -439,7 +450,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Estudio</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -447,7 +458,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Nacimiento hijo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -455,7 +466,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Enfermedad agente</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -463,7 +474,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Atencion familiar</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -471,7 +482,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Examenes</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -479,7 +490,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Lactancia o alimentacion</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -487,7 +498,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Fallecimiento</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -495,7 +506,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Historia clinica</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -503,7 +514,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Maternidad</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -511,7 +522,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Razones particulares</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -519,7 +530,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Donaciones de sangre</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -527,7 +538,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Jubilacion transitoria</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -535,7 +546,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Licencia invernal</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -543,7 +554,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Mision oficial</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -551,7 +562,7 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Suspension</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -559,7 +570,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Lic. Esp. Extr./6meses sin goce de haberes</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -567,7 +578,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Lic. Esp. Extr./1año</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -575,7 +586,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Autorizado decreto 538/20</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -583,7 +594,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Covid positivo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -591,7 +602,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Aislado contacto estrecho</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -599,15 +610,15 @@ if(!isset($_SESSION['user'])){
                  <!--  <td>Post covid positivo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">FALLECIMIENTO COVID</th>
+                  <th scope="row">FALLE CIMIENTO COVID</th>
                   <!-- <td>Fallecimiento covid</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
@@ -615,7 +626,7 @@ if(!isset($_SESSION['user'])){
                   <!-- <td>Total inactivos covid ejecutivo</td> -->
                   <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
                   <td style="width: ;padding: -2px !important;">
-                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger" href="#modalEmpleados">Add HCD</a>
+                      <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
               </tbody>

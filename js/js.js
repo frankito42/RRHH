@@ -1,6 +1,7 @@
 let empleados;
 document.addEventListener("DOMContentLoaded", async function () {
   console.log("DOM fully loaded and parsed");
+  var elems = document.querySelectorAll(".sidenav");
   M.AutoInit();
   $(".datepicker").datepicker({
     format: "yyyy-mm-dd",
@@ -241,17 +242,17 @@ async function dibujar(params) {
     <div class="table-responsive">
             <table class="table table-bordered table-sm highlight">
               <tbody>
-                <tr>
+                <tr style="background: #56555559;">
                   <th scope="row">E</th>
                   <td>Efectivos</td>
                   <td class="text-center" style="width: ;padding: 0px !important;">${params.efectivos} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
                 </tr>
-                <tr>
+                <tr style="background: #56555559;">
                   <th scope="row">P</th>
                   <td>Presentes</td>
                   <td class="text-center" style="width: ;padding: 0px !important;">${params.presentes} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
                 </tr>
-                <tr>
+                <tr style="background: #56555559;">
                   <th scope="row">A</th>
                   <td>Ausentes</td>
                   <td class="text-center" style="width: ;padding: 0px !important;">${params.ausentes} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
@@ -415,17 +416,17 @@ async function dibujarHCD(params) {
   <div class="table-responsive">
           <table class="table table-bordered table-sm highlight">
             <tbody>
-              <tr>
+              <tr style="background: #56555559;">
                 <th scope="row">E</th>
                 <td>Efectivos</td>
                 <td class="text-center" style="width: ;padding: 0px !important;">${params.efectivos} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
-              <tr>
+              <tr style="background: #56555559;">
                 <th scope="row">P</th>
                 <td>Presentes</td>
                 <td class="text-center" style="width: ;padding: 0px !important;">${params.presentes} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
               </tr>
-              <tr>
+              <tr style="background: #56555559;">
                 <th scope="row">A</th>
                 <td>Ausentes</td>
                 <td class="text-center" style="width: ;padding: 0px !important;">${params.ausentes} <button class="waves-effect waves-light btn modal-trigger" href="#mostrarEmpleados" onclick="mostrarEmpleMotivo(this,${params.id})">Ver</button></td>
@@ -654,7 +655,7 @@ document.getElementById("formulario1").addEventListener("submit", (e) => {
     CVPOSI: JSON.parse(localStorage.getItem("CV+")),
     AISLCE: JSON.parse(localStorage.getItem("AISL/C.E")),
     POSTCOVID: JSON.parse(localStorage.getItem("POST COVID+")),
-    FALLECIMIENTOCOVID: JSON.parse(localStorage.getItem("FALLECIMIENTO COVID")),
+    FALLECIMIENTOCOVID: JSON.parse(localStorage.getItem("FALLE CIMIENTO COVID")),
     TICE: JSON.parse(localStorage.getItem("TICE")),
   };
 
@@ -826,7 +827,7 @@ document.getElementById("formulario2").addEventListener("submit", (e) => {
     ADSC: JSON.parse(localStorage.getItem("ADSC")),
     LP: JSON.parse(localStorage.getItem("LP")),
     POSTCOVID: JSON.parse(localStorage.getItem("POST COVID+")),
-    FALLECIMIENTOCOVID: JSON.parse(localStorage.getItem("FALLECIMIENTO COVID")),
+    FALLECIMIENTOCOVID: JSON.parse(localStorage.getItem("FALLE CIMIENTO COVID")),
     TICE: JSON.parse(localStorage.getItem("TICE")),
   };
 
