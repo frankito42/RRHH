@@ -97,261 +97,261 @@ if(!isset($_SESSION['user'])){
                 <tr>
                   <th scope="row">FECHA</th>
                   <!-- <td>Fecha</td> -->
-                  <td style="width: ;padding: 0px !important;" colspan="2"><input required name="muni[]" placeholder="Seleccione la fecha" id="fechaM" class="form-control datepicker" type="text"></td>
+                  <td style="padding: 0px !important;" colspan="2"><input required name="muni[]" placeholder="Seleccione la fecha" id="fechaM" class="form-control datepicker" type="text"></td>
                 </tr>
                 <tr>
                   <th scope="row">EM</th>
                <!--    <td>Efectivos</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" id="efectivosMuni" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" id="efectivosMuni" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">P</th>
                   <!-- <td>Presentes</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">A</th>
                   <!-- <td>Ausentes</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">A IN</th>
                   <!-- <td>Ausente injustificado</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LA</th>
                   <!-- <td>Licencia anual</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">AT</th>
                <!--    <td>Accidente de trabajo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">MATR</th>
                   <!-- <td>Matrimonio agente</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">EST</th>
                   <!-- <td>Estudio</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">NAC</th>
                   <!-- <td>Nacimiento hijo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LEA</th>
                  <!--  <td>Enfermedad agente</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LEF</th>
                  <!--  <td>Atencion familiar</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">EXAM</th>
                   <!-- <td>Examenes</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LACT</th>
                   <!-- <td>Lactancia o alimentacion</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LF</th>
                   <!-- <td>Fallecimiento</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">HC</th>
                   <!-- <td>Historia clinica</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">MATERN</th>
                   <!-- <td>Maternidad</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">RP</th>
                   <!-- <td>Razones particulares</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">DONS</th>
                   <!-- <td>Donaciones de sangre</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">JT</th>
                   <!-- <td>Jubilacion transitoria</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LI</th>
                   <!-- <td>Licencia invernal</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr> 
                   <th scope="row">MO</th>
                   <!-- <td>Mision oficial</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">SUSP</th>
                  <!--  <td>Suspension</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LEE6M</th>
                   <!-- <td>Lic. Esp. Extr./6meses sin goce de haberes</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LEE1A</th>
                   <!-- <td>Lic. Esp. Extr./1año</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">ADSC</th>
                  <!--  <td>Municipales adscriptos</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LP</th>
                  <!--  <td>Licencia politica</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">D.538</th>
                   <!-- <td>Autorizado decreto 538/20</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">CV+</th>
                   <!-- <td>Covid positivo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">AISL/C.E</th>
                   <!-- <td>Aislado contacto estrecho</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">POST COVID+</th>
                  <!--  <td>Post covid positivo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">FALLE CIMIENTO COVID</th>
                   <!-- <td>Fallecimiento covid</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">TICE</th>
                   <!-- <td>Total inactivos covid ejecutivo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="muni[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAddMuni waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleadosMunicipales">Add</a>
                   </td>
                 </tr>
@@ -384,7 +384,7 @@ if(!isset($_SESSION['user'])){
                 <tr>
                   <th scope="row">F</th>
                  <!--  <td>Fecha</td> -->
-                  <td style="width: ;padding: 0px !important;" colspan="2"><input required name="hdc[]" placeholder="Seleccione la fecha" id="fechaH" class="form-control datepicker" type="text"></td>
+                  <td style="padding: 0px !important;" colspan="2"><input required name="hdc[]" placeholder="Seleccione la fecha" id="fechaH" class="form-control datepicker" type="text"></td>
 
 
                 </tr>
@@ -392,240 +392,240 @@ if(!isset($_SESSION['user'])){
                 <tr>
                   <th scope="row">EH</th>
                   <!-- <td>Efectivos</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" id="efectivosHcd" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" id="efectivosHcd" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">P</th>
                   <!-- <td>Presentes</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">A</th>
                  <!--  <td>Ausentes</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">A IN</th>
                  <!--  <td>Ausente injustificado</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LA</th>
                   <!-- <td>Licencia anual</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">AT</th>
                   <!-- <td>Accidente de trabajo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">MATR</th>
                   <!-- <td>Matrimonio agente</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">EST</th>
                   <!-- <td>Estudio</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">NAC</th>
                   <!-- <td>Nacimiento hijo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LEA</th>
                  <!--  <td>Enfermedad agente</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LEF</th>
                  <!--  <td>Atencion familiar</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">EXAM</th>
                   <!-- <td>Examenes</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LACT</th>
                   <!-- <td>Lactancia o alimentacion</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LF</th>
                   <!-- <td>Fallecimiento</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">HC</th>
                   <!-- <td>Historia clinica</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">MATERN</th>
                   <!-- <td>Maternidad</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">RP</th>
                   <!-- <td>Razones particulares</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">DONS</th>
                   <!-- <td>Donaciones de sangre</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">JT</th>
                   <!-- <td>Jubilacion transitoria</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LI</th>
                   <!-- <td>Licencia invernal</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">MO</th>
                   <!-- <td>Mision oficial</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">SUSP</th>
                  <!--  <td>Suspension</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LEE6M</th>
                   <!-- <td>Lic. Esp. Extr./6meses sin goce de haberes</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">LEE1A</th>
                   <!-- <td>Lic. Esp. Extr./1año</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">D.538</th>
                   <!-- <td>Autorizado decreto 538/20</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">CV+</th>
                   <!-- <td>Covid positivo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">AISL/C.E</th>
                   <!-- <td>Aislado contacto estrecho</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">POST COVID+</th>
                  <!--  <td>Post covid positivo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">FALLE CIMIENTO COVID</th>
                   <!-- <td>Fallecimiento covid</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">TICE</th>
                   <!-- <td>Total inactivos covid ejecutivo</td> -->
-                  <td style="width: ;padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
-                  <td style="width: ;padding: -2px !important;">
+                  <td style="padding: 0px !important;"><input required name="hdc[]" placeholder="......" class="form-control" type="number"></td>
+                  <td style="padding: -2px !important;">
                       <a class="AbrirModalAdd waves-effect waves-light btn modal-trigger btn-small" href="#modalEmpleados">Add HCD</a>
                   </td>
                 </tr>
